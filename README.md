@@ -25,3 +25,10 @@
 - 4 x 1TB SATA SSDs
 - Quad port SFP+ NIC
 - Fujitsu D3307 SAS HBA
+
+### Network
+- Netgate 1100 pfsense router
+- Ubiquiti Networks US-16-XG - 16+4 10GbE aggregation switch
+- Mikrotik CRS305-1G-4S+IN - 5 port SFP+ switch
+- Mikrotik CRS328-24P-4S+RM - 24 port gigabit PoE switch
+- 2 x Ubiquiti UAP-AC-LITE UniFi AP AC LITE wireless access point
