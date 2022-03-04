@@ -6,12 +6,14 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 1. Networking essentials: routing, subnetting, vlans, etc
 2. A deep(er) dive into containerized applications
 3. Orchestration with Kubernetes
-4. Automated deployment with Ansible(plus Teraform? Vagrant?)
-5. XCP-ng workstation setup
-6. XCP-ng VM installs
-7. Storage administration with TrueNAS Scale
-8. Syncthing for documents and working files across systems
-9. Replication to a secondary backup NAS
+4. Automated deployment with Ansible
+5. Automated resource creation/deletion with Terraform(and Vagrant?)
+6. XCP-ng workstation setup
+7. XCP-ng VM installs
+8. VFIO windows gaming VM with Looking Glass
+9. Storage administration with TrueNAS Scale
+10. Syncthing for documents and working files across systems
+11. Replication to a secondary backup NAS
 
 ## Hardware
 
@@ -42,13 +44,14 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 
 ## Software
 
-- XCP-ng
-- Ansible
-- Syncthing
-- Kubernetes
-- Terraform?
-- Vagrant?
-- TrueNAS Scale
-- Fedora
+- [XCP-ng](https://xcp-ng.org/)
+- [Ansible](https://www.ansible.com/)
+- [Syncthing](https://syncthing.net/)
+- [Kubernetes](https://kubernetes.io/)
+- [Terraform](https://www.terraform.io/)
+- [Vagrant](https://www.vagrantup.com/)
+- [TrueNAS Scale](https://www.truenas.com/truenas-scale/)
+- [Fedora](https://getfedora.org/)
+- [pfSense Plus](https://www.netgate.com/pfsense-plus-software)
+- [Looking Glass](https://looking-glass.io/)
 - Windows(because I have to)
-- pfSense Plus
