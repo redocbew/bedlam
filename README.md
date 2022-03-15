@@ -11,7 +11,7 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 6. XCP-ng workstation setup
 7. XCP-ng VM installs
 8. VFIO windows gaming VM with Looking Glass
-9. Storage administration with TrueNAS Scale
+9. Storage administration with TrueNAS Core
 10. Syncthing for documents and working files across systems
 11. Replication to a secondary backup NAS
 
@@ -28,7 +28,7 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 - 8 x 10TB SAS drives
 - 3 x 4TB NVMe SSDs
 - 4 x 1TB SATA SSDs
-- Quad port SFP+ NIC
+- Intel X520-DA2 dual SFP+ NIC
 - Fujitsu D3307 SAS HBA
 
 ### Network
@@ -50,7 +50,7 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 - [Kubernetes](https://kubernetes.io/)
 - [Terraform](https://www.terraform.io/)
 - [Vagrant](https://www.vagrantup.com/)
-- [TrueNAS Scale](https://www.truenas.com/truenas-scale/)
+- [TrueNAS Core](https://www.truenas.com/truenas-core/)
 - [Fedora](https://getfedora.org/)
 - [pfSense Plus](https://www.netgate.com/pfsense-plus-software)
 - [Looking Glass](https://looking-glass.io/)
