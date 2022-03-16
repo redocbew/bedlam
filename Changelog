@@ -14,3 +14,6 @@ TrueNAS Scale is being replaced with TrueNAS Core.
 - Clustering features using `gluster` requires a paid license to TrueCommand
 - Clustering features don't yet have a GUI.
 - If I want to make a cluster I'll need a third box, and that's not currently in the budget.
+
+## 3-15-2022
+While the primary NAS may need some bells and whistles the backup NAS can be a simple appliance.  I can sell the Mini and replace it with a Synology NAS using the same drives.  Also installed a 2U mounting plate in the rack for the Pi cluster.
