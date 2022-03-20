@@ -27,7 +27,7 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 - 2 x RTX 2080 Super GPUs
 - 8 x 10TB SAS drives
 - 3 x 4TB NVMe SSDs
-- 4 x 1TB SATA SSDs
+- 3 x 1TB SATA SSDs
 - Intel X520-DA2 dual SFP+ NIC
 - Fujitsu D3307 SAS HBA
 

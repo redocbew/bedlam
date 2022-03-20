@@ -4,11 +4,11 @@
 A quad port SFP+ card is unnecessary.
 
 - I won't be needing independent 10 gigabit connections for each VM.
-- The dual port NIC I have supports SR-IOV in case I want to pass through a port to a VM.
-- The motherboard I have has two onboard 10 gigabit NICs
+- The dual port NIC I have supports SR-IOV in case I want to pass through each port to separate VMs.
+- The motherboard I have has two onboard 10 gigabit NICs providing me a total of four 10 gig ports.
 
 ## 3-14-2022
-TrueNAS Scale is being replaced with TrueNAS Core.
+It seems like the folks at iXsystems really want TrueNAS Scale to be an appliance which is not a great fit for my intended use case on the primary NAS.  I'm going to stick with Core on the primary for the following reasons:
 
 - The `apt` package manager is disabled from the command line.
 - Clustering features using `gluster` requires a paid license to TrueCommand
@@ -17,3 +17,12 @@ TrueNAS Scale is being replaced with TrueNAS Core.
 
 ## 3-15-2022
 While the primary NAS may need some bells and whistles the backup NAS can be a simple appliance.  I can sell the Mini and replace it with a Synology NAS using the same drives.  Also installed a 2U mounting plate in the rack for the Pi cluster.
+
+## 3-16-2022
+Current desktop machine died.  Repeated notices I was running out of space(which were at odds with output from `df -h`) were followed by a hard lock and reboot into the `initramfs` console.  Instead of attempting to repair partitions I opted to replace the OS drive altogether with a larger 1TB SSD.  I had also been planning a CPU upgrade to a 5700G so I could turn it into a VFIO box using Looking Glass.  Boot was not successful after that was done.  Restoring original components did not improve the situation, so now it appears the motherboard is the culprit.  Replacing the board and trying again.
+
+## 3-18-2022
+Cooling loop for the workstation is nearly complete and ready to be filled.  Due to the immediate 90 degree bend on the fill line it's difficult to fill the loop without spills that cause all kind of annoying and time consuming cleanup jobs.  I'm waiting on a few extra fittings that I can connect to the fill and drain ports in order to make filling and draining easier.  All the fittings I have are for hard lines, and being able to use a soft line while filling or draining the loop will make things much easier.
+
+## 3-19-2022
+Only one of the two 1TB SSDs currently used in Stockpile's SSD pool will make its way into the workstation.  That will give me 7TB of NVMe storage plus an additional ~2TB SATA storage for virtual machine disks.  I'd probably need to add a SATA power splitter to make the fourth SATA SSD fit otherwise the cabling would get super annoying, and it wouldn't really provide that much more additional storage.  I'd rather try to sell it, so into the ebay box it shall go.
