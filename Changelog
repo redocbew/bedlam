@@ -26,3 +26,13 @@ Cooling loop for the workstation is nearly complete and ready to be filled.  Due
 
 ## 3-19-2022
 Only one of the two 1TB SSDs currently used in Stockpile's SSD pool will make its way into the workstation.  That will give me 7TB of NVMe storage plus an additional ~2TB SATA storage for virtual machine disks.  I'd probably need to add a SATA power splitter to make the fourth SATA SSD fit otherwise the cabling would get super annoying, and it wouldn't really provide that much more additional storage.  I'd rather try to sell it, so into the ebay box it shall go.
+
+## 3-21-2022
+We have boot!  Bedlam is alive.  Considering doing the Pi KVM thing since I have one 2GB Pi4 which I couldn't fit in the rack.  The 2U Pi rackmount kit I got came with a bad mounting tray, and I couldn't be bothered to RMA it or 3d print a replacement.  It'll probably get turned into either a tiny HTPC, or a Pi KVM for bedlam.
+
+## 3-27-2022
+Rather than virtualizing FreeNAS I'm going to be keeping Stockpile around as a separate system.   It's the more enterprisey way to do things, and I didn't like how the drives were obstructing airflow from the front radiator.  I have a feeling lack of airflow through the case is part of what killed the motherboard in the desktop.  I'll be swapping the 10TB SAS drives I bought for the workstation into it, and replacing the 8TB SATA drives it's using currently.  I'll sell the 8TB drives, and maybe set up a 2x10gig link aggregation for the NAS.  In the unlikely event that I regularly saturate a single 10gig link having the link aggregation will prevent any other concurrent transfers from being impacted.
+
+This leaves the Fujitsu HBA without a home.  Stockpile already has a SAS controller that I flashed to IT mode when I first built the system, and I don't have any other use for it, so that will also be going into the ebay box.
+
+The VFIO machine will use both of the 1TB SSDs currently in Stockpile.  I have three 1TB m.2 drives leftover from the previous iteration of the workstation, and had planned to use one of those in the desktop/VFIO machine as its OS drive. I think the better move is to sell all three of those, and the 4x M.2 PCIe card that came with the Aours Xtreme.  It's unlikely I'll need more than 2TB of local storage on this machine just for host OS, VM, and game storage.

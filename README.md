@@ -23,13 +23,24 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 
 ### Workstation
 - Threadripper 3960X
+- Gigabyte TRX40 AORUS Xtreme
 - 128GB 3600MHz DDR4
 - 2 x RTX 2080 Super GPUs
-- 8 x 10TB SAS drives
 - 3 x 4TB NVMe SSDs
-- 3 x 1TB SATA SSDs
+- 2 x 1TB SATA SSDs
 - Intel X520-DA2 dual SFP+ NIC
-- Fujitsu D3307 SAS HBA
+
+### NAS
+- Intel Core i3 6100
+- Supermicro X11SSH-CTF-O
+- 8 x 10TB SAS drives
+
+### VFIO gaming / Looking Glass
+- AMD Ryzen 7 5700G
+- Gigabyte X570 I AORUS Pro Wi-Fi
+- 32GB DDR4
+- RTX 2070
+- 2 x 1TB SATA SSDs
 
 ### Network
 - Netgate 1100 pfSense router
