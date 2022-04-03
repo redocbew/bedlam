@@ -36,3 +36,6 @@ Rather than virtualizing FreeNAS I'm going to be keeping Stockpile around as a s
 This leaves the Fujitsu HBA without a home.  Stockpile already has a SAS controller that I flashed to IT mode when I first built the system, and I don't have any other use for it, so that will also be going into the ebay box.
 
 The VFIO machine will use both of the 1TB SSDs currently in Stockpile.  I have three 1TB m.2 drives leftover from the previous iteration of the workstation, and had planned to use one of those in the desktop/VFIO machine as its OS drive. I think the better move is to sell all three of those, and the 4x M.2 PCIe card that came with the Aours Xtreme.  It's unlikely I'll need more than 2TB of local storage on this machine just for host OS, VM, and game storage.
+
+## 4-3-2022
+After a crazy week at work I'm deciding against re-building the old desktop machine and having a separate machine dedicated to VFIO shenanigans.  The laptop from System76 is doing fine as a daily driver.  I'll be returning the parts I bought for it's cooling loop, and adding the rest to the list of stuff to sell.  I may decide to keep a small SSD pool in Stockpile depending on how the performance of a 2x1TB mirror of SATA SSDs stacks up against the 8x10TB RAIDZ1 SAS drives.

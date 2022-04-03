@@ -10,7 +10,7 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 5. Automated resource creation/deletion with Terraform(and Vagrant?)
 6. XCP-ng workstation setup
 7. XCP-ng VM installs
-8. VFIO windows gaming VM with Looking Glass
+8. VFIO windows gaming VM
 9. Storage administration with TrueNAS Core
 10. Syncthing for documents and working files across systems
 11. Replication to a secondary backup NAS
@@ -34,12 +34,6 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 - Intel Core i3 6100
 - Supermicro X11SSH-CTF-O
 - 8 x 10TB SAS drives
-
-### VFIO gaming / Looking Glass
-- AMD Ryzen 7 5700G
-- Gigabyte X570 I AORUS Pro Wi-Fi
-- 32GB DDR4
-- RTX 2070
 - 2 x 1TB SATA SSDs
 
 ### Network
@@ -64,5 +58,4 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 - [TrueNAS Core](https://www.truenas.com/truenas-core/)
 - [Fedora](https://getfedora.org/)
 - [pfSense Plus](https://www.netgate.com/pfsense-plus-software)
-- [Looking Glass](https://looking-glass.io/)
 - Windows(because I have to)
