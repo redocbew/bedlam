@@ -1,0 +1,4 @@
+baseURL = 'http://redocbew.net'
+languageCode = 'en-us'
+title = 'Welcome to Bedlam (Home)Labs'
+theme ="dimension"
