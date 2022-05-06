@@ -41,7 +41,7 @@ The VFIO machine will use both of the 1TB SSDs currently in Stockpile.  I have t
 After a crazy week at work I'm deciding against re-building the old desktop machine and having a separate machine dedicated to VFIO shenanigans.  The laptop from System76 is doing fine as a daily driver.  I'll be returning the parts I bought for it's cooling loop, and adding the rest to the list of stuff to sell.  I may decide to keep a small SSD pool in Stockpile depending on how the performance of a 2x1TB mirror of SATA SSDs stacks up against the 8x10TB RAIDZ1 SAS drives.
 
 ## 5-1-2022
-Drive swap into Stockpile is done.  I've now got eight 8TB SATA drives sitting around with the rest of the spare spare parts to sell.  I also spent some time finally labeling my patch panel so I can stop chasing wires down every time I work on the rack.  I bought a CRS326-24S+2Q+RM from Mikrotik as well which I'll be using to replace the 16+4 10gig switch from Ubiquiti.  I already have a few of their other switches, and I'm not fond of their decision to sue the journalist who reported on their(somewhat) recent data breach.  I'll start with the switch, and then as time and budget allows I'll replace their APs also.  I never made the jump to wifo6 since everything in my homelab is wired, so wireless isn't as much of a priority.  Documentation on Mikrotik stuff isn't great, and I'm not sure how applicable experience with their hardware is going to be in terms of networking in general, but it's a decent and relatively inexpensive way to get started.
+Drive swap into Stockpile is done.  I've now got eight 8TB SATA drives sitting around with the rest of the spare spare parts to sell.  I also spent some time finally labeling my patch panel so I can stop chasing wires down every time I work on the rack.  I bought a CRS326-24S+2Q+RM from Mikrotik as well which I'll be using to replace the 16+4 10gig switch from Ubiquiti.  I already have a few of Mikrotik's other switches, and I'm not fond of Ubiquiti's decision to sue the journalist who reported on their(somewhat) recent data breach.  I'll start with the switch, and then as time and budget allows I'll replace their APs also.  I never made the jump to wifo6 since everything in my homelab is wired, so wireless isn't as much of a priority.  Documentation on Mikrotik stuff isn't great, and I'm not sure how applicable experience with their hardware is going to be in terms of networking in general, but it's a decent and relatively inexpensive way to get started.
 
 This also gives a chance to build out decent vlans for storage, containers, and management which is something I never really got around to previously.
 
@@ -53,7 +53,7 @@ Lots of network updates.
 - Removed one of the two APs.  I only need one, so the other is going to get sold.
 - Created VLANS for IoT, storage, containers, and management.
 -- Moved 40gbe interface on Stockpile to storage vlan
--- Moved IPMI web portals to management vlans
+-- Moved IPMI, and web portals to management vlans
 -- Moved AP, 3d printer, TV, and other devices to the IoT vlan
 - Created link aggregations:
 -- 2x10gig from CRS326 to CRS305
