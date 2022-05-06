@@ -28,20 +28,21 @@ Shoutout to [LevelOneTechs](https://level1techs.com/) for giving me a new way to
 - 2 x RTX 2080 Super GPUs
 - 3 x 4TB NVMe SSDs
 - 2 x 1TB SATA SSDs
-- Intel X520-DA2 dual SFP+ NIC
+- Chelsio T580-LP-CR
 
 ### NAS
 - Intel Core i3 6100
 - Supermicro X11SSH-CTF-O
 - 8 x 10TB SAS drives
 - 2 x 1TB SATA SSDs
+- Chelsio T580-LP-CR
 
 ### Network
 - Netgate 1100 pfSense router
-- Ubiquiti Networks US-16-XG - 16+4 10GbE aggregation switch
+- Mikrotik CRS326-24S+2Q+RM - 24 port SFP+ with 2 40GbE ports
+- Mikrotik CRS328-24P-4S+RM - 24 gigabit PoE with 4 SFP+ switch
 - Mikrotik CRS305-1G-4S+IN - 4+1 port SFP+ switch
-- Mikrotik CRS328-24P-4S+RM - 24 port gigabit PoE switch
-- 2 x Ubiquiti UAP-AC-LITE UniFi AP AC LITE wireless access point
+- Ubiquiti UAP-AC-LITE UniFi AP AC LITE wireless access point
 
 ### Misc other stuff
 - CyberPower CPS1500AVR UPS
