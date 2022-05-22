@@ -61,3 +61,10 @@ Lots of network updates.
 -- 2x10gig from CRS326 to Stockpile on container VLAN
 
 While doing all of this, the PoE switch seems to have died.  It was acting strange and dropping connections to its management portal. Finally I lost access to the management portal altogether even after a factory reset.
+
+## 5-21-2022
+Turns out the PoE switch isn't dead.  It just has weird reset behavior coupled with the fact that I changed its fallback IP and then forgot I had changed it.  I've seen people mess with switch configuration using Ansible, but I should probably start elsewhere with Ansible once I finally get around to it.
+
+Having multiple different link aggregations on the same switch is giving me the business also.  I keep getting broadcast storms at random times as if it's forgetting that the interfaces in the LAG are in fact bonded together.  For now it's not so much of a problem, but I would like to get that working eventually.  The Mikrotik switches seem decent for the price, but the more oddballs I find the more likely it seems that experience gained here may not be directly applicable elsewhere.  It'll do fine though for the deeper dive into networking I've had planned for quite some time now.  The concepts should be the same it's just the mechanics of it which are different.
+
+In addition to that, I'm also working on setting up a simple site using Hugo as a kind of portfolio/blog where I'll be writing these updates.
