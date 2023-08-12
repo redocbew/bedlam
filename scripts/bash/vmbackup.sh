@@ -5,7 +5,7 @@ Collect VM disk images and configuration and copy them elsewhere for easier back
 '
 
 if ! [[ $(findmnt -M "/media/backups") ]]; then
-    mount -t nfs stockpile.home:/mnt/stockpile/backups /media/backups
+    mount -t cifs -o uid=libvirt-qemu,credentials=/home/redocbew/.smb,nobrl //stockpile.home/backups /media/backups
 fi
 
 if ! [[ $(findmnt -M "/media/backups") ]]; then
