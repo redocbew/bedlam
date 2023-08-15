@@ -4,10 +4,11 @@
 Collect VM disk images and configuration and copy them elsewhere for easier backup.
 '
 
-if ! [[ $(findmnt -M "/media/backups") ]]; then
-    mount -t cifs -o uid=libvirt-qemu,credentials=/home/redocbew/.smb,nobrl //stockpile.home/backups /media/backups
+if [[ $(findmnt -M "/media/backups") ]]; then
+    umount /media/backups
 fi
 
+mount -t cifs -o uid=libvirt-qemu,credentials=/home/redocbew/.smb,nobrl //stockpile.home/backups /media/backups
 if ! [[ $(findmnt -M "/media/backups") ]]; then
     exit 1
 fi
@@ -39,3 +40,5 @@ do
   fi
 done
 
+umount /media/backups
+mount -t cifs -o uid=libvirt-qemu,credentials=/home/redocbew/.smb,noperm //stockpile.home/backups /media/backups
