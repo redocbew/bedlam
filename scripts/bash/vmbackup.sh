@@ -5,10 +5,12 @@ Collect VM disk images and configuration and copy them elsewhere for easier back
 '
 
 if [[ $(findmnt -M "/media/backups") ]]; then
-  echo "unmounting backup share and remounting with nobrl"
-  umount /media/backups && mount -t cifs -o uid=libvirt-qemu,credentials=/home/redocbew/.smb,nobrl //stockpile.home/backups /media/backups
+  echo "unmounting backup share"
+  umount /media/backups
 fi
 
+echo "mounting with nobrl"
+mount -t cifs -o uid=libvirt-qemu,credentials=/home/redocbew/.smb,nobrl //stockpile.home/backups /media/backups
 if ! [[ $(findmnt -M "/media/backups") ]]; then
   echo "findmnt failed, exiting"
   exit 1
