@@ -1,12 +1,14 @@
 #!/usr/bin/bash
 
-: '
-Collect VM disk images and configuration and copy them elsewhere for easier backup.
-'
+# By Dan "redocbew" Fogle
+# Collect VM disk images and configuration and copy them elsewhere for easier backup.
+# Licensed under GPLv2
 
-# qemu-img requires the nobrl param to play well with CIFS
+# in case the backup share was already mounted for some other reason unmount it,
+# and remount with nobrl. qemu-img requires this to play nice with CIFS
 if [[ $(findmnt -M "/media/backups") ]]; then
   echo "unmounting backup share"
+  # TODO: Collect params before unmounting so I can leave things how I found them?
   umount /media/backups
 fi
 
@@ -46,4 +48,5 @@ do
   fi
 done
 
+# nobrl can cause more trouble than its worth if overused, so unmount share when we're done
 umount /media/backups
