@@ -4,6 +4,7 @@
 Collect VM disk images and configuration and copy them elsewhere for easier backup.
 '
 
+# qemu-img requires the nobrl param to play well with CIFS
 if [[ $(findmnt -M "/media/backups") ]]; then
   echo "unmounting backup share"
   umount /media/backups

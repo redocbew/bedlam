@@ -1,0 +1,10 @@
+# This service unit is for sending vm disk images to stockpile
+# By Dan "redocbew" Fogle
+# Licensed under GPL V2
+#
+
+[Unit]
+Description=VM disk and configuration backup
+
+[Service]
+ExecStart=/root/vmbackup.sh

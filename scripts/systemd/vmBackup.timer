@@ -1,0 +1,14 @@
+# This timer unit is for VM disk and configuration backup
+# By Dan "redocbew" Fogle
+# Licensed under GPL V2
+#
+
+[Unit]
+Description=VM disk and configuration backup
+
+[Timer]
+Unit=vmBackup.service
+OnCalendar=*-*-* 03:00:00
+
+[Install]
+WantedBy=timers.target
