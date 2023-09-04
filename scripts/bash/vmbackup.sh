@@ -33,6 +33,7 @@ do
   vmdisk=$(virsh domblklist $vm --details | awk '/disk/{print $4}');
   israw=$(echo $vmdisk | grep -c ^/dev/);
   echo "dumping xml"
+  mkdir -p /media/backups/$vm
   virsh dumpxml $vm > /media/backups/$vm/$vm.xml;
 
   if [ $israw = 1 ]; then
@@ -49,4 +50,5 @@ do
 done
 
 # nobrl can cause more trouble than its worth if overused, so unmount share when we're done
+echo "unmounting backup share"
 umount /media/backups
